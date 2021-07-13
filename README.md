@@ -4,7 +4,7 @@
 
 # Conteúdo
 
-- [ ] AULA 01
+- [x] AULA 01
   - https://www.youtube.com/watch?v=06-VwtIM2NA
   - https://www.alura.com.br/imersao-react/aula01-react-alurakut
 - [ ] AULA 02

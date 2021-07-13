@@ -12,14 +12,17 @@ function ProfileSidebar(propriedades) {
 }
 
 export default function Home() {
-  const usuarioAleatorio = 'omariosouto';
+  const usuarioAleatorio = 'marcossouz';
   const pessoasFavoritas = [
-    'juunegreiros',
-    'omariosouto',
-    'peas',
-    'rafaballerini',
-    'marcobrunodev',
-    'felipefialho'
+    'lroberta',
+    'AlexSmith7192',
+    'silasviniciuss',
+    'DeboraEsposito',
+    'pdoborba',
+    'KarolFradique',
+    'DjalmaHenry',
+    'emersonnobrega',
+    'davimateus1'
   ]
 
   return (

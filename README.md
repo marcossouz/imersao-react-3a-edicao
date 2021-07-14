@@ -10,7 +10,7 @@
   - Organizaremos as pastas do nosso projeto;
   - Passaremos propriedades para components;
   - Faremos deploy do seu Alurakut na Vercel.
-- [ ] AULA 02
+- [x] AULA 02
   - Entender melhor o que é um SPA;
   - Conhecer o hook useEffect;
   - Criação do formulário para cadastrar comunidade;

@@ -35,3 +35,6 @@
 - api github: https://api.github.com/users/juunegreiros/followers
 - layout base: https://www.figma.com/file/xHF0n0qxiE2rqjqAILiBUB/Alurakut?node-id=58%3A0
 - códigos prontos: https://gist.github.com/juunegreiros/bbcd0de4af38bc37089e579ec74b0a9a
+- Qual a diferença entre forEach e map? https://www.youtube.com/watch?v=JbzcLKiTThk
+- Mario Souto - Github Pro + Eslint: https://www.youtube.com/watch?v=yMRSDdifGW8&t=2s
+- Criando Flappy Bird com JavaScript - Mario Souto: https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej

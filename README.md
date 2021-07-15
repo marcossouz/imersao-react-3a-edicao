@@ -15,7 +15,14 @@
   - Conhecer o hook useEffect;
   - Criação do formulário para cadastrar comunidade;
   - E sempre faremos deploy do seu Alurakut na Vercel.
-- [ ] AULA 03
+- [x] AULA 03
+  - Entender um pouco melhor sobre como funciona o protocolo HTTP;
+  - Consumir API do Github usando fetch para preencher os nossos amigos;
+  - Conhecendo Promises e como lidar com o JSON;
+  - Usar o hook useEffect para lidar com código assíncrono;
+  - Conhecer o DatoCMS, o sistema de gestão de conteúdo que iremos utilizar na nossa aplicação;
+  - Criar os modelos dos conteúdos que iremos gerenciar no DatoCMS;
+  - Criar nossas comunidades pela interface do DatoCMS.
 - [ ] AULA 04
 - [ ] AULA 05
   
@@ -27,6 +34,8 @@
   - https://www.youtube.com/watch?v=FJRHQw8VCZY
   - https://www.alura.com.br/imersao-react/aula02-react-state-form
 - AULA 03
+  - https://www.youtube.com/watch?v=EBj8l0QGWn4
+  - https://www.alura.com.br/imersao-react/aula03-hooks-useeffect-protocolo-http
 - AULA 04
 - AULA 05
 
@@ -38,3 +47,6 @@
 - Qual a diferença entre forEach e map? https://www.youtube.com/watch?v=JbzcLKiTThk
 - Mario Souto - Github Pro + Eslint: https://www.youtube.com/watch?v=yMRSDdifGW8&t=2s
 - Criando Flappy Bird com JavaScript - Mario Souto: https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej
+- DatoCMS - https://www.datocms.com/
+- O que é CMS - https://www.youtube.com/watch?v=IZi6nogysRM
+- O que é wordpress? - https://www.youtube.com/watch?v=aiZSAn_2SJc

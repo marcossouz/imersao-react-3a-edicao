@@ -23,12 +23,18 @@
   - Conhecer o DatoCMS, o sistema de gestão de conteúdo que iremos utilizar na nossa aplicação;
   - Criar os modelos dos conteúdos que iremos gerenciar no DatoCMS;
   - Criar nossas comunidades pela interface do DatoCMS.
-- [ ] AULA 04
+- [x] AULA 04
   - Entenderemos o que é XML e AJAX;
   - Usaremos queries GraphQL para consumir os dados do DatoCMS;
   - Fazer um BFF (Back-end For Front-end) para proteger nossos dados ao enviar dados para o servidor;
   - Criar nossas comunidades pela interface do nosso Alurakut.
-- [ ] AULA 05
+- [x] AULA 05
+  - Criar a nossa página de Login;
+  - Roteamento com Next.js;
+  - Como funciona o redirecionamento de páginas;
+  - Formulários com gerenciamento do estado do input;
+  - Salvar cookies com o padrão JWT para autenticar nossa página;
+  - Decodificar o nosso token para mostrar a nossa Home apenas para usuários autenticados;
   
 # links e referências
 - AULA 01
@@ -44,6 +50,8 @@
   - https://www.youtube.com/watch?v=8C39l6kvLDI
   - https://www.alura.com.br/imersao-react/aula04-graphql-bff-ajax
 - AULA 05
+  - https://www.youtube.com/watch?v=zc1NT-21QnU
+  - https://www.alura.com.br/imersao-react/aula05-login-final
 
 - git alura: https://github.com/alura-challenges/alurakut/
 - projeto em na vercel: https://alurakut-eta.vercel.app/
@@ -62,3 +70,13 @@
 - Como fazer AJAX - https://medium.com/@omariosouto/entendendo-como-fazer-ajax-com-a-fetchapi-977ff20da3c6
 - Mario Souto - Variáveis de ambiente e segurança - https://www.youtube.com/watch?v=BP2KQtCyzo8
 - Datocms Graphql - https://www.datocms.com/docs/content-delivery-api/your-first-request
+- Sobre como usar o BFF - https://gist.github.com/juunegreiros/de40391093fe1f43ec2bb0777ecfa7f4
+- JWT - https://jwt.io/
+- Nookies - https://www.npmjs.com/package/nookies
+- Postman - https://www.postman.com/
+- Ju Negreiros - Destructuring - https://www.youtube.com/watch?v=f8a-qwKC5yk
+- Mario Souto - Rotas Next - https://www.youtube.com/watch?v=x5Hs8kXlktM
+- Mario Souto - Cookies e LocalStorage - https://www.youtube.com/watch?v=zSl_n-9yGRs
+- Mario Souto - SEO, Performance e Segurança no Front End - https://www.youtube.com/watch?v=76eEzmx3irs
+- Post - Como funciona import e export do Javascript - https://www.alura.com.br/artigos/como-funciona-o-import-e-export-do-javascript
+- React Router DOM - https://reactrouter.com/web/guides/quick-start

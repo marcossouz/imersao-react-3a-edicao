@@ -24,23 +24,7 @@ function ProfileSidebar(propriedades) {
 
 export default function Home() {
   const usuarioAleatorio = 'marcossouz';
-  const [comunidades, setComunidades] = React.useState([
-    {
-      id: '12802123896123',
-      title: 'Eu odeio acordar cedo',
-      image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg'
-    },
-    {
-      id: '12802466796123',
-      title: 'Javascript Lovers',
-      image: 'https://picsum.photos/id/2/200/300'
-    },
-    {
-      id: '1280212345473',
-      title: 'Tá pago',
-      image: 'https://picsum.photos/id/201/200/300'
-    }
-  ]);
+  const [comunidades, setComunidades] = React.useState([]);
 
   const pessoasFavoritas = [
     'lroberta',
@@ -53,6 +37,45 @@ export default function Home() {
     'emersonnobrega',
     'davimateus1'
   ]
+
+  const [seguidores, setSeguidores] = React.useState([])
+
+  React.useEffect(function () {
+    fetch('https://api.github.com/users/marcossouz/followers')
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (r_json) {
+        setSeguidores(r_json)
+      })
+
+    fetch('https://graphql.datocms.com/', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'be5720ca76c8c97f1edb72e1b0d0d1',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        "query": `query {
+        allCommunities {
+          title,
+          id,
+          imageUrl,
+          creatorSlug
+        }
+    }
+    ` })
+    })
+      .then(response => response.json())
+      .then((r_json) => {
+        const comunidades = r_json.data.allCommunities;
+        console.log(comunidades)
+        setComunidades(comunidades)
+      })
+  }, [])
+
+  console.log(seguidores)
 
   return (
     <>
@@ -81,15 +104,29 @@ export default function Home() {
               // console.log('Campo: ', dadosDoForm.get('image'));
 
               const comunidade = {
-                id: new Date().toISOString(),
+                itemType: "970509",
                 title: dadosDoForm.get('title'),
-                image: dadosDoForm.get('image'),
+                imageUrl: dadosDoForm.get('image'),
+                creatorSlug: usuarioAleatorio,
               }
-              const comunidadesAtualizadas = [...comunidades, comunidade];
-              
-              if(comunidadesAtualizadas.length <= 9) {
+
+              fetch('api/comunidades', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(comunidade)
+              })
+              .then(async (response) => {
+                const dados = await response.json()
+                // console.log(dados.record)
+                const comunidade = dados.record;
+                const comunidadesAtualizadas = [...comunidades, comunidade];
                 setComunidades(comunidadesAtualizadas)
-              }
+           
+              })
+
+           
             }}>
               <div>
                 <input
@@ -122,8 +159,8 @@ export default function Home() {
               {comunidades.map((itemAtual) => {
                 return (
                   <li key={itemAtual.id}>
-                    <a href={`/users/${itemAtual.title}`}>
-                      <img src={itemAtual.image} />
+                    <a href={`/communities/${itemAtual.id}`}>
+                      <img src={itemAtual.imageUrl} />
                       <span>{itemAtual.title}</span>
                     </a>
                   </li>

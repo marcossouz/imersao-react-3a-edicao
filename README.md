@@ -24,6 +24,10 @@
   - Criar os modelos dos conteúdos que iremos gerenciar no DatoCMS;
   - Criar nossas comunidades pela interface do DatoCMS.
 - [ ] AULA 04
+  - Entenderemos o que é XML e AJAX;
+  - Usaremos queries GraphQL para consumir os dados do DatoCMS;
+  - Fazer um BFF (Back-end For Front-end) para proteger nossos dados ao enviar dados para o servidor;
+  - Criar nossas comunidades pela interface do nosso Alurakut.
 - [ ] AULA 05
   
 # links e referências
@@ -37,6 +41,8 @@
   - https://www.youtube.com/watch?v=EBj8l0QGWn4
   - https://www.alura.com.br/imersao-react/aula03-hooks-useeffect-protocolo-http
 - AULA 04
+  - https://www.youtube.com/watch?v=8C39l6kvLDI
+  - https://www.alura.com.br/imersao-react/aula04-graphql-bff-ajax
 - AULA 05
 
 - git alura: https://github.com/alura-challenges/alurakut/
@@ -50,3 +56,9 @@
 - DatoCMS - https://www.datocms.com/
 - O que é CMS - https://www.youtube.com/watch?v=IZi6nogysRM
 - O que é wordpress? - https://www.youtube.com/watch?v=aiZSAn_2SJc
+- doc api github - https://docs.github.com/pt/rest
+- Ju Negreiros - Hello World com GraphQL - https://www.youtube.com/watch?v=RLP9MixVZvw
+- GraphQL - https://graphql.org/
+- Como fazer AJAX - https://medium.com/@omariosouto/entendendo-como-fazer-ajax-com-a-fetchapi-977ff20da3c6
+- Mario Souto - Variáveis de ambiente e segurança - https://www.youtube.com/watch?v=BP2KQtCyzo8
+- Datocms Graphql - https://www.datocms.com/docs/content-delivery-api/your-first-request
